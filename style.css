@@ -1,0 +1,279 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 1000px;
+}
+
+.login {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  border: none;
+  background-color: #b30000;
+  color: #ffffff;
+  font-size: large;
+}
+
+.login:hover {
+  background-color: #800000;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown2 {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 21px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown2 .dropbtn2 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 21px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #030303;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #030303;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  background-color: #a00909;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content2 a {
+  float: none;
+  background-color: #a00909;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #b10a0a;
+}
+
+.dropdown-content2 a:hover {
+  background-color: #b10a0a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #800000;
+}
+
+.dropdown2:hover .dropbtn2 {
+  background-color: #800000;
+}
+
+.navigationbar {
+  overflow: hidden;
+  height: 61px;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+}
+
+.navigationbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 21px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 21px 16px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btn2 {
+  background-color: #333;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  float: right;
+}
+
+.btn:hover {
+  background-color: #800000;
+  color: linen;
+}
+.btn2:hover {
+  background-color: #800000;
+  color: linen;
+}
+.active {
+  background-color: #b30000;
+}
+
+.search-icon {
+  color: whitesmoke;
+  float: right;
+  padding: 14px 16px;
+}
+.lightbulb {
+  float: right;
+  color: whitesmoke;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+.dark-mode {
+  background-color: rgb(33, 41, 52);
+  color: rgb(216, 244, 244);
+}
+.dark-mode2 {
+  background-color: rgb(23, 30, 39);
+}
+
+.dark-mode3 {
+  background-color: rgb(23, 30, 39);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  grid-gap: 10px;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  height: 90px;
+  border: 3px solid #000;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #ddd8d8;
+}
+
+.equals {
+  grid-column: span 2;
+  color: #ffffff;
+  background-color: #b30000;
+}
+
+.equals:hover {
+  background-color: #a00909;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 10px;
+  height: 75px;
+}
+
+.screen .previous-operand {
+  color: rgba(255, 255, 255, 0.642);
+  font-size: 1.5rem;
+}
+
+.screen .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.operand {
+  background-color: rgba(231, 137, 137, 0.718);
+}
+.operand:hover {
+  background-color: rgba(203, 106, 106, 0.718);
+}
+
+.container-clock {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+  font-size: x-large;
+}
+
+.clock {
+  text-align: center;
+  height: 30px;
+  width: 300px;
+  border: 3px solid #000;
+  border-radius: 30px;
+}
+
+.container-pesel {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+}
