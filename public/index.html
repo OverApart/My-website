@@ -8,12 +8,12 @@
       src="https://kit.fontawesome.com/e16c5dbea7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Strona główna</title>
   </head>
   <body>
     <nav class="navigationbar">
-      <a class="btn" href="index.html">Strona Główna</a>
+      <a class="active" href="index.html">Strona Główna</a>
       <a class="btn" href="Rok2021.html">Rok 2021</a>
       <div class="dropdown">
         <button class="dropbtn">
@@ -42,14 +42,8 @@
       </button>
       <button class="login">Log in</button>
     </nav>
-    <div class="container-pesel">
-      <input id="pesel" type="text" placeholder="Wpisz numer pesel" />
-      <label id="Tekstpesel" for="pesel"></label>
-      <button onclick="SprawdzenieDaty();" class="btn-pesel">
-        Wyliczenie Daty
-      </button>
-    </div>
-    <script src="pesel.js"></script>
-    <script src="darkmode.js"></script>
+
+    <div class="container"></div>
+    <script src="../src/darkmode.js"></script>
   </body>
 </html>
